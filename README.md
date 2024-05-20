@@ -27,23 +27,30 @@ pip install -r requirements.txt
 flask run --debug 
 ```
 
-## Uso
+## Uso (La consulta de llama3 requiere tener ollama instalado y el modelo llama 3 corriendo ver https://ollama.com/)
 Realice solicitudes POST a los endpoints definidos para procesar PDFs o para pedir respuestas a GPT basadas en el texto de los PDFs.
-/process-pdfs
-body
+
+## /process-pdfs
+### body
+```bash
 {
   "directory_path": "files's path",
   "chunk_size": 2000 #optional default 500
 }
-/ask_gpt4 
-body
+```
+## /ask_gpt4 
+### body
+```bash
 {
   "question": "Consulta",
   "rol_context": "Rol del asistente"
 }
-/ask_llama3 
-body
+```
+## /ask_llama3 
+### body
+```bash
 {
   "question": "Consulta",
   "rol_context": "Rol del asistente"
 }
+```
