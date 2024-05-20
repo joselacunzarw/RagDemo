@@ -13,7 +13,8 @@ Esta aplicación integra la generación de texto con modelos (gpt y llama), y un
 ### Creación de un entorno virtual
 ```bash
 python -m venv venv
-source venv/bin/activate  # En Windows use `venv\Scripts\activate`
+source python -m venv venv
+  # En Windows use `venv\Scripts\activate`
 ```
 
 ### Instalación de Dependencias
@@ -23,7 +24,8 @@ pip install -r requirements.txt
 
 ### Ejecución del Servidor Flask
 ```bash
-flask run --debug```
+flask run --debug 
+```
 
 ## Uso
 Realice solicitudes POST a los endpoints definidos para procesar PDFs o para pedir respuestas a GPT basadas en el texto de los PDFs.
