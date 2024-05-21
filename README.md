@@ -24,7 +24,7 @@ source python -m venv venv
 pip install -r requirements.txt
 ```
 
-### Ejecución del Servidor Flask
+### Ejecución del Servidor Flask con debug activado
 ```bash
 flask run --debug 
 ```
