@@ -13,6 +13,8 @@ Esta aplicación integra la generación de texto con modelos (gpt y llama), y un
 ### Creación de un entorno virtual
 ```bash
 python -m venv venv
+```
+```bash
 source python -m venv venv
   # En Windows use `venv\Scripts\activate`
 ```
